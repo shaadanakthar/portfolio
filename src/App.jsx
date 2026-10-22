@@ -1,33 +1,27 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Education from './components/Education';
-import Interests from './components/Interests';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from "./components/NavBar";
+import Hero from "./sections/Hero";
+import ShowcaseSection from "./sections/ShowcaseSection";
+import LogoShowcase from "./sections/LogoShowcase";
+import FeatureCards from "./sections/FeatureCards";
+import Experience from "./sections/Experience";
+import TechStack from "./sections/TechStack";
+import Testimonials from "./sections/Testimonials";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
-export default function App() {
-  return (
-    <div className="min-h-screen bg-background text-zinc-100 flex flex-col font-sans selection:bg-primary-500/30 selection:text-primary-100">
-      {/* Fixed Sticky Navbar */}
-      <Navbar />
+const App = () => (
+  <div className="bg-black text-white min-h-screen overflow-x-hidden selection:bg-blue-500/30 selection:text-blue-200">
+    <Navbar />
+    <Hero />
+    <ShowcaseSection />
+    <LogoShowcase />
+    <FeatureCards />
+    <Experience />
+    <TechStack />
+    <Testimonials />
+    <Contact />
+    <Footer />
+  </div>
+);
 
-      {/* Main Content Sections */}
-      <main className="flex-1">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Education />
-        <Interests />
-        <Contact />
-      </main>
-
-      {/* Footer */}
-      <Footer />
-    </div>
-  );
-}
+export default App;
