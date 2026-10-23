@@ -1,4 +1,4 @@
-# Shaadan Akthar — 3D AI/ML Developer Portfolio
+# Shaadan Akthar — AI/ML Developer Portfolio
 
 A cutting-edge, interactive **3D Developer Portfolio** built for **Shaadan Akthar**, an Artificial Intelligence engineering student at AJ Institute of Engineering and Technology, Mangaluru.
 
